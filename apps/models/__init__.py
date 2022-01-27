@@ -1,4 +1,4 @@
-from orator import DatabaseManager
+from orator import DatabaseManager, Schema
 from main import PARAMS
 database = PARAMS.DATABASE
 
@@ -14,5 +14,6 @@ config = {
 }
 
 db = DatabaseManager(config)
+schema = Schema(db)
 from orator import Model
 Model.set_connection_resolver(db)
