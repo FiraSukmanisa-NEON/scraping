@@ -6,3 +6,5 @@ colorlog
 orator
 pydantic
 psycopg2
+requests
+beautifulsoup
